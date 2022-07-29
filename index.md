@@ -1,12 +1,8 @@
 ---
 data:
   libraryCategories: []
-  verificationCategories:
-  - name: .
-    pages:
-    - icon: ':heavy_check_mark:'
-      path: example.test.cpp
-      title: example.test.cpp
+  verificationCategories: []
 layout: toppage
 ---
-Kyo_s_s Library
+# Kyo_s_s Library
+バグってるかも　
