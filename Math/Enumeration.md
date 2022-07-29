@@ -1,6 +1,6 @@
 ---
 title: Enumeration
-documentation_of ./Enumeration.hpp
+documentation_of: ./Enumeration.hpp
 ---
 
 ## Enumeration
