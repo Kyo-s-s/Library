@@ -5,4 +5,4 @@ data:
 layout: toppage
 ---
 # Kyo_s_s Library
-バグってるかも　
+バグってるかも　クエー
