@@ -96,11 +96,3 @@ void FLASH(){ cout << endl; }
 template<class Head, class... Tail> void FLASH(const Head  &head, const Tail &...tail) { output(head); if(sizeof...(tail)) cout << " "; FLASH(tail...); }
 
 #pragma endregion header    
-
-
-int main(){
-
-
-
-
-}
