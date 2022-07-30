@@ -63,7 +63,7 @@ data:
     \ cout << \" \"; OUT(tail...); }\n\nvoid FLASH(){ cout << endl; }\ntemplate<class\
     \ Head, class... Tail> void FLASH(const Head  &head, const Tail &...tail) { output(head);\
     \ if(sizeof...(tail)) cout << \" \"; FLASH(tail...); }\n\n#pragma endregion header\
-    \    \n\n\nint main(){\n\n\n\n\n}\n"
+    \    \n"
   code: "#pragma region header\n#include <bits/stdc++.h>\nusing namespace std;\n//\
     \ #include <atcoder/all>\n// using namespace atcoder;\n\n/* alias */\nusing ull\
     \ = unsigned long long;\nusing ll = long long;\nusing pii = pair<int, int>;\n\
@@ -119,12 +119,12 @@ data:
     \ cout << \" \"; OUT(tail...); }\n\nvoid FLASH(){ cout << endl; }\ntemplate<class\
     \ Head, class... Tail> void FLASH(const Head  &head, const Tail &...tail) { output(head);\
     \ if(sizeof...(tail)) cout << \" \"; FLASH(tail...); }\n\n#pragma endregion header\
-    \    \n\n\nint main(){\n\n\n\n\n}"
+    \    \n"
   dependsOn: []
   isVerificationFile: false
   path: Template/Template.hpp
   requiredBy: []
-  timestamp: '2022-07-30 23:58:42+09:00'
+  timestamp: '2022-07-31 00:03:22+09:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
 documentation_of: Template/Template.hpp
