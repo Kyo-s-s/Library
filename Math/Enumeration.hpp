@@ -33,6 +33,10 @@ template<class T> struct Enumeration{
         else return nCk(n + k - 1, k);
     }
 
+    T Catalan(int n){
+        return nCk(2*n, n) - nCk(2*n, n-1);
+    }
+
   private:
     vector<T> _fact, _finv, _inv;
 
