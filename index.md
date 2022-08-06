@@ -5,7 +5,7 @@ data:
     pages:
     - icon: ':warning:'
       path: Data_structure/Segtree.hpp
-      title: Data_structure/Segtree.hpp
+      title: Segtree
   - name: Math
     pages:
     - icon: ':warning:'
