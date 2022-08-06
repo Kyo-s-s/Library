@@ -1,6 +1,11 @@
 ---
 data:
   libraryCategories:
+  - name: Data_structure
+    pages:
+    - icon: ':warning:'
+      path: Data_structure/Segtree.hpp
+      title: Data_structure/Segtree.hpp
   - name: Math
     pages:
     - icon: ':warning:'
