@@ -11,6 +11,9 @@ data:
     - icon: ':warning:'
       path: Math/Enumeration.hpp
       title: Enumeration
+    - icon: ':warning:'
+      path: Math/Modint.hpp
+      title: Modint
   - name: Template
     pages:
     - icon: ':warning:'
