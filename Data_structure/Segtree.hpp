@@ -4,7 +4,7 @@ template<class M> struct Segtree {
 
     Segtree() : Segtree(0) {}
     Segtree(int n) : Segtree(vector<S> (n, M::e())) {}
-    Segtree(vector<S> v) : n(int(v.size())) { 
+    Segtree(const vector<S> &v) : n(int(v.size())) { 
         while((1 << log) < n) log++;
         size = 1 << log;
         d = vector<S> (2 * size, M::e());
