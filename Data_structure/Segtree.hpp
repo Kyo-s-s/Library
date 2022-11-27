@@ -3,8 +3,8 @@ template<class M> struct Segtree {
     using S = typename M::T;
 
     Segtree() : Segtree(0) {}
-    Segtree(int n) : Segtree(n, vector<S> (n, M::e())) {}
-    Segtree(vector<S> &v) : n(int(v.size())) { 
+    Segtree(int n) : Segtree(vector<S> (n, M::e())) {}
+    Segtree(vector<S> v) : n(int(v.size())) { 
         while((1 << log) < n) log++;
         size = 1 << log;
         d = vector<S> (2 * size, M::e());
