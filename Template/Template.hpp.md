@@ -35,8 +35,8 @@ data:
     \ for(T a: array) chmin(ret, a); return ret; }\ntemplate<class T> T sum(vector<T>\
     \ &array){ T ret = 0; for(T a:array) ret += a; return ret; }\ntemplate<class T>\
     \ void list_set(vector<T> &array){ sort(all(array)); array.erase(unique(all(array)),array.end());\
-    \ }\ntemplate<class T> T bisect_left(vector<T> &array, T key){ return lower_bound(all(array),key)\
-    \ - array.begin(); }\ntemplate<class T> T bisect_right(vector<T> &array, T key){\
+    \ }\ntemplate<class T> int bisect_left(vector<T> &array, T key){ return lower_bound(all(array),key)\
+    \ - array.begin(); }\ntemplate<class T> int bisect_right(vector<T> &array, T key){\
     \ return upper_bound(all(array),key) - array.begin(); }\n\n/* string */\nll string_to_ll(string\
     \ n){ ll ret = 0, k = 1; while(n.length() > 0){ ret += k * (n.back() - '0'); n.pop_back();\
     \ k *= 10; } return ret; }\nstring ll_to_string(ll n){ string ret = \"\"; while(n\
@@ -91,8 +91,8 @@ data:
     \ for(T a: array) chmin(ret, a); return ret; }\ntemplate<class T> T sum(vector<T>\
     \ &array){ T ret = 0; for(T a:array) ret += a; return ret; }\ntemplate<class T>\
     \ void list_set(vector<T> &array){ sort(all(array)); array.erase(unique(all(array)),array.end());\
-    \ }\ntemplate<class T> T bisect_left(vector<T> &array, T key){ return lower_bound(all(array),key)\
-    \ - array.begin(); }\ntemplate<class T> T bisect_right(vector<T> &array, T key){\
+    \ }\ntemplate<class T> int bisect_left(vector<T> &array, T key){ return lower_bound(all(array),key)\
+    \ - array.begin(); }\ntemplate<class T> int bisect_right(vector<T> &array, T key){\
     \ return upper_bound(all(array),key) - array.begin(); }\n\n/* string */\nll string_to_ll(string\
     \ n){ ll ret = 0, k = 1; while(n.length() > 0){ ret += k * (n.back() - '0'); n.pop_back();\
     \ k *= 10; } return ret; }\nstring ll_to_string(ll n){ string ret = \"\"; while(n\
@@ -124,7 +124,7 @@ data:
   isVerificationFile: false
   path: Template/Template.hpp
   requiredBy: []
-  timestamp: '2022-07-31 00:03:22+09:00'
+  timestamp: '2022-12-31 20:49:35+09:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
 documentation_of: Template/Template.hpp
