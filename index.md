@@ -6,7 +6,7 @@ data:
     - icon: ':warning:'
       path: Data_structure/Segtree.hpp
       title: Segtree
-    - icon: ':warning:'
+    - icon: ':heavy_check_mark:'
       path: Data_structure/Tree.hpp
       title: Tree
     - icon: ':heavy_check_mark:'
@@ -28,6 +28,9 @@ data:
   verificationCategories:
   - name: Test
     pages:
+    - icon: ':heavy_check_mark:'
+      path: Test/yosupo-Lowest-Common-Ancestor.test.cpp
+      title: Test/yosupo-Lowest-Common-Ancestor.test.cpp
     - icon: ':heavy_check_mark:'
       path: Test/yosupo-UnionFind.test.cpp
       title: Test/yosupo-UnionFind.test.cpp

@@ -2,10 +2,13 @@
 data:
   _extendedDependsOn: []
   _extendedRequiredBy: []
-  _extendedVerifiedWith: []
+  _extendedVerifiedWith:
+  - icon: ':heavy_check_mark:'
+    path: Test/yosupo-Lowest-Common-Ancestor.test.cpp
+    title: Test/yosupo-Lowest-Common-Ancestor.test.cpp
   _isVerificationFailed: false
   _pathExtension: hpp
-  _verificationStatusIcon: ':warning:'
+  _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     links: []
   bundledCode: "#line 1 \"Data_structure/Tree.hpp\"\ntemplate<class T = int> struct\
@@ -94,8 +97,9 @@ data:
   path: Data_structure/Tree.hpp
   requiredBy: []
   timestamp: '2022-09-04 20:10:32+09:00'
-  verificationStatus: LIBRARY_NO_TESTS
-  verifiedWith: []
+  verificationStatus: LIBRARY_ALL_AC
+  verifiedWith:
+  - Test/yosupo-Lowest-Common-Ancestor.test.cpp
 documentation_of: Data_structure/Tree.hpp
 layout: document
 title: Tree
