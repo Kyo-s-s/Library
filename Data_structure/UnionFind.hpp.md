@@ -1,14 +1,14 @@
 ---
 data:
   _extendedDependsOn: []
-  _extendedRequiredBy:
-  - icon: ':warning:'
-    path: Test/yosupo-UnionFind.cpp
-    title: Test/yosupo-UnionFind.cpp
-  _extendedVerifiedWith: []
+  _extendedRequiredBy: []
+  _extendedVerifiedWith:
+  - icon: ':heavy_check_mark:'
+    path: Test/yosupo-UnionFind.test.cpp
+    title: Test/yosupo-UnionFind.test.cpp
   _isVerificationFailed: false
   _pathExtension: hpp
-  _verificationStatusIcon: ':warning:'
+  _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     links: []
   bundledCode: "#line 1 \"Data_structure/UnionFind.hpp\"\nstruct UnionFind {\n   \
@@ -54,11 +54,11 @@ data:
   dependsOn: []
   isVerificationFile: false
   path: Data_structure/UnionFind.hpp
-  requiredBy:
-  - Test/yosupo-UnionFind.cpp
+  requiredBy: []
   timestamp: '2023-01-22 13:42:31+09:00'
-  verificationStatus: LIBRARY_NO_TESTS
-  verifiedWith: []
+  verificationStatus: LIBRARY_ALL_AC
+  verifiedWith:
+  - Test/yosupo-UnionFind.test.cpp
 documentation_of: Data_structure/UnionFind.hpp
 layout: document
 title: UnionFind

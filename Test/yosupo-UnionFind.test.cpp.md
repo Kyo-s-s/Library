@@ -1,18 +1,20 @@
 ---
 data:
   _extendedDependsOn:
-  - icon: ':warning:'
+  - icon: ':heavy_check_mark:'
     path: Data_structure/UnionFind.hpp
     title: UnionFind
   _extendedRequiredBy: []
   _extendedVerifiedWith: []
   _isVerificationFailed: false
   _pathExtension: cpp
-  _verificationStatusIcon: ':warning:'
+  _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
+    '*NOT_SPECIAL_COMMENTS*': ''
+    PROBLEM: https://judge.yosupo.jp/problem/unionfind
     links:
     - https://judge.yosupo.jp/problem/unionfind
-  bundledCode: "#line 1 \"Test/yosupo-UnionFind.cpp\"\n#include <bits/stdc++.h>\n\
+  bundledCode: "#line 1 \"Test/yosupo-UnionFind.test.cpp\"\n#include <bits/stdc++.h>\n\
     using namespace std;\n\n#define PROBLEM \"https://judge.yosupo.jp/problem/unionfind\"\
     \n\n#line 1 \"Data_structure/UnionFind.hpp\"\nstruct UnionFind {\n    int n, cnt;\n\
     \    vector<int> parent;\n    UnionFind() : n(0), cnt(0) {}\n    UnionFind(int\
@@ -33,7 +35,7 @@ data:
     \    for (int i = 0; i < n; i++) {\n            result[leader_buf[i]].push_back(i);\n\
     \        }\n        result.erase(\n            remove_if(result.begin(), result.end(),\n\
     \                      [&](const vector<int> &v) { return v.empty(); }),\n   \
-    \         result.end());\n        return result;\n    }\n};\n#line 7 \"Test/yosupo-UnionFind.cpp\"\
+    \         result.end());\n        return result;\n    }\n};\n#line 7 \"Test/yosupo-UnionFind.test.cpp\"\
     \n\nint main() {\n\n    int N, Q;\n    cin >> N >> Q;\n    UnionFind uf(N);\n\n\
     \    while (Q--) {\n        int t, u, v;\n        cin >> t >> u >> v;\n      \
     \  if (t == 0) {\n            uf.merge(u, v);\n        } else {\n            cout\
@@ -43,19 +45,19 @@ data:
     \ Q;\n    cin >> N >> Q;\n    UnionFind uf(N);\n\n    while (Q--) {\n        int\
     \ t, u, v;\n        cin >> t >> u >> v;\n        if (t == 0) {\n            uf.merge(u,\
     \ v);\n        } else {\n            cout << (uf.same(u, v) ? 1 : 0) << endl;\n\
-    \        }\n    }\n\n}"
+    \        }\n    }\n\n}\n"
   dependsOn:
   - Data_structure/UnionFind.hpp
-  isVerificationFile: false
-  path: Test/yosupo-UnionFind.cpp
+  isVerificationFile: true
+  path: Test/yosupo-UnionFind.test.cpp
   requiredBy: []
-  timestamp: '2023-01-22 13:53:00+09:00'
-  verificationStatus: LIBRARY_NO_TESTS
+  timestamp: '2023-01-22 13:56:45+09:00'
+  verificationStatus: TEST_ACCEPTED
   verifiedWith: []
-documentation_of: Test/yosupo-UnionFind.cpp
+documentation_of: Test/yosupo-UnionFind.test.cpp
 layout: document
 redirect_from:
-- /library/Test/yosupo-UnionFind.cpp
-- /library/Test/yosupo-UnionFind.cpp.html
-title: Test/yosupo-UnionFind.cpp
+- /verify/Test/yosupo-UnionFind.test.cpp
+- /verify/Test/yosupo-UnionFind.test.cpp.html
+title: Test/yosupo-UnionFind.test.cpp
 ---
