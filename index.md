@@ -3,7 +3,7 @@ data:
   libraryCategories:
   - name: Data_structure
     pages:
-    - icon: ':warning:'
+    - icon: ':heavy_check_mark:'
       path: Data_structure/Segtree.hpp
       title: Segtree
     - icon: ':heavy_check_mark:'
@@ -31,6 +31,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: Test/yosupo-Lowest-Common-Ancestor.test.cpp
       title: Test/yosupo-Lowest-Common-Ancestor.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: Test/yosupo-Point-Add-Range-Sum.test.cpp
+      title: Test/yosupo-Point-Add-Range-Sum.test.cpp
     - icon: ':heavy_check_mark:'
       path: Test/yosupo-UnionFind.test.cpp
       title: Test/yosupo-UnionFind.test.cpp
