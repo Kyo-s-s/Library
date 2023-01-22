@@ -9,6 +9,9 @@ data:
     - icon: ':warning:'
       path: Data_structure/Tree.hpp
       title: Tree
+    - icon: ':warning:'
+      path: Data_structure/UnionFind.hpp
+      title: UnionFind
   - name: Math
     pages:
     - icon: ':warning:'
