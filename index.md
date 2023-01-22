@@ -25,6 +25,11 @@ data:
     - icon: ':warning:'
       path: Template/Template.hpp
       title: Template/Template.hpp
+  - name: Test
+    pages:
+    - icon: ':warning:'
+      path: Test/yosupo-UnionFind.cpp
+      title: Test/yosupo-UnionFind.cpp
   verificationCategories: []
 layout: toppage
 ---
