@@ -1,9 +1,9 @@
-template<class T> struct CumlativeSum {
+template<class T> struct CumulativeSum {
     int n;
     vector<T> data; 
     bool builded = false;
-    CumlativeSum(int n) : n(n), data(n + 1) {}
-    CumlativeSum(const vector<T> &v) : n(v.size()), data(n + 1) {
+    CumulativeSum(int n) : n(n), data(n + 1) {}
+    CumulativeSum(const vector<T> &v) : n(v.size()), data(n + 1) {
         for (int i = 0; i < n; i++) {
             data[i + 1] = v[i];
         }
