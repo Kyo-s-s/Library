@@ -3,17 +3,17 @@ data:
   _extendedDependsOn: []
   _extendedRequiredBy: []
   _extendedVerifiedWith:
-  - icon: ':x:'
+  - icon: ':heavy_check_mark:'
     path: Test/yosupo-Static-Range-Sum.test.cpp
     title: Test/yosupo-Static-Range-Sum.test.cpp
-  _isVerificationFailed: true
+  _isVerificationFailed: false
   _pathExtension: hpp
-  _verificationStatusIcon: ':x:'
+  _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     links: []
   bundledCode: "#line 1 \"Data_structure/CumulativeSum.hpp\"\ntemplate<class T> struct\
-    \ CumlativeSum {\n    int n;\n    vector<T> data; \n    bool builded = false;\n\
-    \    CumlativeSum(int n) : n(n), data(n + 1) {}\n    CumlativeSum(const vector<T>\
+    \ CumulativeSum {\n    int n;\n    vector<T> data; \n    bool builded = false;\n\
+    \    CumulativeSum(int n) : n(n), data(n + 1) {}\n    CumulativeSum(const vector<T>\
     \ &v) : n(v.size()), data(n + 1) {\n        for (int i = 0; i < n; i++) {\n  \
     \          data[i + 1] = v[i];\n        }\n    }\n\n    void build() {\n     \
     \   for (int i = 0; i < n; i++) {\n            data[i + 1] += data[i];\n     \
@@ -21,9 +21,9 @@ data:
     \ build();\n        assert(0 <= r && r <= n);\n        return data[r];\n    }\n\
     \n    T sum(int l, int r) {\n        assert(0 <= l && l <= r && r <= n);\n   \
     \     return sum(r) - sum(l);\n    }\n\n};\n"
-  code: "template<class T> struct CumlativeSum {\n    int n;\n    vector<T> data;\
-    \ \n    bool builded = false;\n    CumlativeSum(int n) : n(n), data(n + 1) {}\n\
-    \    CumlativeSum(const vector<T> &v) : n(v.size()), data(n + 1) {\n        for\
+  code: "template<class T> struct CumulativeSum {\n    int n;\n    vector<T> data;\
+    \ \n    bool builded = false;\n    CumulativeSum(int n) : n(n), data(n + 1) {}\n\
+    \    CumulativeSum(const vector<T> &v) : n(v.size()), data(n + 1) {\n        for\
     \ (int i = 0; i < n; i++) {\n            data[i + 1] = v[i];\n        }\n    }\n\
     \n    void build() {\n        for (int i = 0; i < n; i++) {\n            data[i\
     \ + 1] += data[i];\n        }\n        builded = true;\n    }\n\n    T sum(int\
@@ -34,8 +34,8 @@ data:
   isVerificationFile: false
   path: Data_structure/CumulativeSum.hpp
   requiredBy: []
-  timestamp: '2023-01-27 17:34:49+09:00'
-  verificationStatus: LIBRARY_ALL_WA
+  timestamp: '2023-01-27 17:37:24+09:00'
+  verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - Test/yosupo-Static-Range-Sum.test.cpp
 documentation_of: Data_structure/CumulativeSum.hpp

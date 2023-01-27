@@ -1,14 +1,14 @@
 ---
 data:
   _extendedDependsOn:
-  - icon: ':x:'
+  - icon: ':heavy_check_mark:'
     path: Data_structure/CumulativeSum.hpp
     title: CumulativeSum
   _extendedRequiredBy: []
   _extendedVerifiedWith: []
-  _isVerificationFailed: true
+  _isVerificationFailed: false
   _pathExtension: cpp
-  _verificationStatusIcon: ':x:'
+  _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     '*NOT_SPECIAL_COMMENTS*': ''
     PROBLEM: https://judge.yosupo.jp/problem/static_range_sum
@@ -16,9 +16,9 @@ data:
     - https://judge.yosupo.jp/problem/static_range_sum
   bundledCode: "#line 1 \"Test/yosupo-Static-Range-Sum.test.cpp\"\n#include <bits/stdc++.h>\n\
     using namespace std;\n\n#define PROBLEM \"https://judge.yosupo.jp/problem/static_range_sum\"\
-    \n\n#line 1 \"Data_structure/CumulativeSum.hpp\"\ntemplate<class T> struct CumlativeSum\
-    \ {\n    int n;\n    vector<T> data; \n    bool builded = false;\n    CumlativeSum(int\
-    \ n) : n(n), data(n + 1) {}\n    CumlativeSum(const vector<T> &v) : n(v.size()),\
+    \n\n#line 1 \"Data_structure/CumulativeSum.hpp\"\ntemplate<class T> struct CumulativeSum\
+    \ {\n    int n;\n    vector<T> data; \n    bool builded = false;\n    CumulativeSum(int\
+    \ n) : n(n), data(n + 1) {}\n    CumulativeSum(const vector<T> &v) : n(v.size()),\
     \ data(n + 1) {\n        for (int i = 0; i < n; i++) {\n            data[i + 1]\
     \ = v[i];\n        }\n    }\n\n    void build() {\n        for (int i = 0; i <\
     \ n; i++) {\n            data[i + 1] += data[i];\n        }\n        builded =\
@@ -40,8 +40,8 @@ data:
   isVerificationFile: true
   path: Test/yosupo-Static-Range-Sum.test.cpp
   requiredBy: []
-  timestamp: '2023-01-27 17:34:49+09:00'
-  verificationStatus: TEST_WRONG_ANSWER
+  timestamp: '2023-01-27 17:37:24+09:00'
+  verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: Test/yosupo-Static-Range-Sum.test.cpp
 layout: document
