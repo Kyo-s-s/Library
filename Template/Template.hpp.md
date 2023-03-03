@@ -2,10 +2,13 @@
 data:
   _extendedDependsOn: []
   _extendedRequiredBy: []
-  _extendedVerifiedWith: []
+  _extendedVerifiedWith:
+  - icon: ':heavy_check_mark:'
+    path: Test/yosupo-many-aplusb.test.cpp
+    title: Test/yosupo-many-aplusb.test.cpp
   _isVerificationFailed: false
   _pathExtension: hpp
-  _verificationStatusIcon: ':warning:'
+  _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     links: []
   bundledCode: "#line 1 \"Template/Template.hpp\"\n#pragma region header\n#include\
@@ -26,10 +29,10 @@ data:
     no\\n\")\ntemplate<class T> bool chmax(T &a, const T &b) {if(a<b){ a=b; return\
     \ 1;} return 0;}\ntemplate<class T> bool chmin(T &a, const T &b) {if(b<a){ a=b;\
     \ return 1;} return 0;}\n#define debug(x) cerr << #x << \":\" << x << \"\\n\"\
-    ;\n\n/* REP macro */\n#define reps(i, a, n) for(int i = (a); i < (n); i++)\n#define\
+    ;\n\n/* REP macro */\n#define reps(i, a, n) for(ll i = (a); i < (n); i++)\n#define\
     \ rep(i, n) reps(i, 0, (n))\n#define rrep(i, n) reps(i, 1, (n + 1))\n#define repd(i,\
-    \ n) for(int i = (n - 1); i >= 0; i--)\n#define rrepd(i, n) for(int i = (n); i\
-    \ >= 1; i--)\n#define fore(i, a) for(auto &i: a)\n\n/* vector */\ntemplate<class\
+    \ n) for(ll i = (n - 1); i >= 0; i--)\n#define rrepd(i, n) for(ll i = (n); i >=\
+    \ 1; i--)\n#define fore(i, a) for(auto &i: a)\n\n/* vector */\ntemplate<class\
     \ T> T vmax(vector<T> &array){ T ret = array[0]; for(T a: array) chmax(ret, a);\
     \ return ret; }\ntemplate<class T> T vmin(vector<T> &array){ T ret = array[0];\
     \ for(T a: array) chmin(ret, a); return ret; }\ntemplate<class T> T sum(vector<T>\
@@ -82,10 +85,10 @@ data:
     template<class T> bool chmax(T &a, const T &b) {if(a<b){ a=b; return 1;} return\
     \ 0;}\ntemplate<class T> bool chmin(T &a, const T &b) {if(b<a){ a=b; return 1;}\
     \ return 0;}\n#define debug(x) cerr << #x << \":\" << x << \"\\n\";\n\n/* REP\
-    \ macro */\n#define reps(i, a, n) for(int i = (a); i < (n); i++)\n#define rep(i,\
+    \ macro */\n#define reps(i, a, n) for(ll i = (a); i < (n); i++)\n#define rep(i,\
     \ n) reps(i, 0, (n))\n#define rrep(i, n) reps(i, 1, (n + 1))\n#define repd(i,\
-    \ n) for(int i = (n - 1); i >= 0; i--)\n#define rrepd(i, n) for(int i = (n); i\
-    \ >= 1; i--)\n#define fore(i, a) for(auto &i: a)\n\n/* vector */\ntemplate<class\
+    \ n) for(ll i = (n - 1); i >= 0; i--)\n#define rrepd(i, n) for(ll i = (n); i >=\
+    \ 1; i--)\n#define fore(i, a) for(auto &i: a)\n\n/* vector */\ntemplate<class\
     \ T> T vmax(vector<T> &array){ T ret = array[0]; for(T a: array) chmax(ret, a);\
     \ return ret; }\ntemplate<class T> T vmin(vector<T> &array){ T ret = array[0];\
     \ for(T a: array) chmin(ret, a); return ret; }\ntemplate<class T> T sum(vector<T>\
@@ -124,9 +127,10 @@ data:
   isVerificationFile: false
   path: Template/Template.hpp
   requiredBy: []
-  timestamp: '2022-12-31 20:49:35+09:00'
-  verificationStatus: LIBRARY_NO_TESTS
-  verifiedWith: []
+  timestamp: '2023-03-03 19:01:30+09:00'
+  verificationStatus: LIBRARY_ALL_AC
+  verifiedWith:
+  - Test/yosupo-many-aplusb.test.cpp
 documentation_of: Template/Template.hpp
 layout: document
 redirect_from:

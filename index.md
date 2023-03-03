@@ -25,7 +25,7 @@ data:
       title: Modint
   - name: Template
     pages:
-    - icon: ':warning:'
+    - icon: ':heavy_check_mark:'
       path: Template/Template.hpp
       title: Template/Template.hpp
   verificationCategories:
@@ -43,6 +43,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: Test/yosupo-UnionFind.test.cpp
       title: Test/yosupo-UnionFind.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: Test/yosupo-many-aplusb.test.cpp
+      title: Test/yosupo-many-aplusb.test.cpp
 layout: toppage
 ---
 # Kyo_s_s Library
