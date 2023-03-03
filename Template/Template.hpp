@@ -42,11 +42,11 @@ template<class T> bool chmin(T &a, const T &b) {if(b<a){ a=b; return 1;} return 
 #define debug(x) cerr << #x << ":" << x << "\n";
 
 /* REP macro */
-#define reps(i, a, n) for(int i = (a); i < (n); i++)
+#define reps(i, a, n) for(ll i = (a); i < (n); i++)
 #define rep(i, n) reps(i, 0, (n))
 #define rrep(i, n) reps(i, 1, (n + 1))
-#define repd(i, n) for(int i = (n - 1); i >= 0; i--)
-#define rrepd(i, n) for(int i = (n); i >= 1; i--)
+#define repd(i, n) for(ll i = (n - 1); i >= 0; i--)
+#define rrepd(i, n) for(ll i = (n); i >= 1; i--)
 #define fore(i, a) for(auto &i: a)
 
 /* vector */
