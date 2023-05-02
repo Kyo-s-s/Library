@@ -35,6 +35,23 @@ template<class T = int> struct Tree {
         return { dist[u], u, v };
     }
 
+    vector<int> path(int u, int v) {
+        vector<T> dist = calc_dist(u);
+        vector<int> path;
+        while (v != u) {
+            path.push_back(v);
+            for (auto e: G[v]) {
+                if (dist[e.to] == dist[v] - e.cost) {
+                    v = e.to;
+                    break;
+                }
+            }
+        }
+        path.push_back(u);
+        reverse(path.begin(), path.end());
+        return path;
+    }
+
     void lca_build(int root = 0) {
         int V = G.size();
         int K = 1;

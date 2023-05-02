@@ -66,6 +66,21 @@ tuple<T, int, int> tree.diameter()
 - $O(N)$
 
 
+## path
+```cpp
+vector<int> tree.path(int u, int v)
+```
+
+- 頂点 $u$ から $v$ までのパスを1つ返す。
+
+##### 制約
+
+- $0 \leq u, v < N$
+
+##### 計算量
+
+- $O(N)$
+
 
 ## lca_build
 
