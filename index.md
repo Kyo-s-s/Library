@@ -41,6 +41,9 @@ data:
       path: Test/yosupo-Static-Range-Sum.test.cpp
       title: Test/yosupo-Static-Range-Sum.test.cpp
     - icon: ':heavy_check_mark:'
+      path: Test/yosupo-Tree-Diameter.test.cpp
+      title: Test/yosupo-Tree-Diameter.test.cpp
+    - icon: ':heavy_check_mark:'
       path: Test/yosupo-UnionFind.test.cpp
       title: Test/yosupo-UnionFind.test.cpp
     - icon: ':heavy_check_mark:'

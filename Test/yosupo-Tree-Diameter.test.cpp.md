@@ -11,11 +11,11 @@ data:
   _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     '*NOT_SPECIAL_COMMENTS*': ''
-    PROBLEM: https://judge.yosupo.jp/problem/lca
+    PROBLEM: https://judge.yosupo.jp/problem/tree_diameter
     links:
-    - https://judge.yosupo.jp/problem/lca
-  bundledCode: "#line 1 \"Test/yosupo-Lowest-Common-Ancestor.test.cpp\"\n#include\
-    \ <bits/stdc++.h>\nusing namespace std;\n\n#define PROBLEM \"https://judge.yosupo.jp/problem/lca\"\
+    - https://judge.yosupo.jp/problem/tree_diameter
+  bundledCode: "#line 1 \"Test/yosupo-Tree-Diameter.test.cpp\"\n#include <bits/stdc++.h>\n\
+    using namespace std;\n\n#define PROBLEM \"https://judge.yosupo.jp/problem/tree_diameter\"\
     \n\n#line 1 \"Data_structure/Tree.hpp\"\ntemplate<class T = int> struct Tree {\n\
     \    struct edge{ int to; T cost; };\n    vector<vector<edge>> G;\n    vector<vector<int>>\
     \ parent;\n    vector<int> unweighted_dist;\n    vector<T> weighted_dist;\n\n\
@@ -62,29 +62,34 @@ data:
     \                v = parent[k][v];\n            }\n        }\n        return parent[0][u];\n\
     \    }\n\n    T dist(int u, int v) {\n        if (weighted_dist.size() == 0) lca_build();\n\
     \        return weighted_dist[u] + weighted_dist[v] - 2 * weighted_dist[lca(u,\
-    \ v)];\n    }\n};\n#line 7 \"Test/yosupo-Lowest-Common-Ancestor.test.cpp\"\n\n\
-    int main() {\n\n    int N, Q; cin >> N >> Q;\n    Tree tree(N);\n    for (int\
-    \ i = 1; i < N; i++) {\n        int p; cin >> p;\n        tree.add_edge(i, p);\n\
-    \    }\n\n    while (Q--) {\n        int u, v; cin >> u >> v;\n        cout <<\
-    \ tree.lca(u, v) << endl;\n    }\n\n}\n"
-  code: "#include <bits/stdc++.h>\nusing namespace std;\n\n#define PROBLEM \"https://judge.yosupo.jp/problem/lca\"\
-    \n\n#include \"../Data_structure/Tree.hpp\"\n\nint main() {\n\n    int N, Q; cin\
-    \ >> N >> Q;\n    Tree tree(N);\n    for (int i = 1; i < N; i++) {\n        int\
-    \ p; cin >> p;\n        tree.add_edge(i, p);\n    }\n\n    while (Q--) {\n   \
-    \     int u, v; cin >> u >> v;\n        cout << tree.lca(u, v) << endl;\n    }\n\
-    \n}\n"
+    \ v)];\n    }\n};\n#line 7 \"Test/yosupo-Tree-Diameter.test.cpp\"\n\nint main()\
+    \ {\n\n    int N; cin >> N;\n    Tree<long long> tree(N);\n    for (int i = 0;\
+    \ i < N - 1; i++) {\n        int a, b;\n        long long c; \n        cin >>\
+    \ a >> b >> c;\n\n        tree.add_edge(a, b, c);\n    }\n\n    auto [dist, u,\
+    \ v] = tree.diameter();\n    vector<int> path = tree.path(u, v);\n    cout <<\
+    \ dist << \" \" << path.size() << endl;\n    for (int i = 0; i < path.size();\
+    \ i++) {\n        cout << path[i] << \" \\n\"[i == path.size() - 1];\n    }\n\n\
+    }\n"
+  code: "#include <bits/stdc++.h>\nusing namespace std;\n\n#define PROBLEM \"https://judge.yosupo.jp/problem/tree_diameter\"\
+    \n\n#include \"../Data_structure/Tree.hpp\"\n\nint main() {\n\n    int N; cin\
+    \ >> N;\n    Tree<long long> tree(N);\n    for (int i = 0; i < N - 1; i++) {\n\
+    \        int a, b;\n        long long c; \n        cin >> a >> b >> c;\n\n   \
+    \     tree.add_edge(a, b, c);\n    }\n\n    auto [dist, u, v] = tree.diameter();\n\
+    \    vector<int> path = tree.path(u, v);\n    cout << dist << \" \" << path.size()\
+    \ << endl;\n    for (int i = 0; i < path.size(); i++) {\n        cout << path[i]\
+    \ << \" \\n\"[i == path.size() - 1];\n    }\n\n}\n"
   dependsOn:
   - Data_structure/Tree.hpp
   isVerificationFile: true
-  path: Test/yosupo-Lowest-Common-Ancestor.test.cpp
+  path: Test/yosupo-Tree-Diameter.test.cpp
   requiredBy: []
   timestamp: '2023-05-02 10:52:24+00:00'
   verificationStatus: TEST_ACCEPTED
   verifiedWith: []
-documentation_of: Test/yosupo-Lowest-Common-Ancestor.test.cpp
+documentation_of: Test/yosupo-Tree-Diameter.test.cpp
 layout: document
 redirect_from:
-- /verify/Test/yosupo-Lowest-Common-Ancestor.test.cpp
-- /verify/Test/yosupo-Lowest-Common-Ancestor.test.cpp.html
-title: Test/yosupo-Lowest-Common-Ancestor.test.cpp
+- /verify/Test/yosupo-Tree-Diameter.test.cpp
+- /verify/Test/yosupo-Tree-Diameter.test.cpp.html
+title: Test/yosupo-Tree-Diameter.test.cpp
 ---
