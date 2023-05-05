@@ -20,7 +20,10 @@ data:
     - icon: ':warning:'
       path: Math/Enumeration.hpp
       title: Enumeration
-    - icon: ':warning:'
+    - icon: ':heavy_check_mark:'
+      path: Math/Matrix.hpp
+      title: Matrix
+    - icon: ':heavy_check_mark:'
       path: Math/Modint.hpp
       title: Modint
   - name: Template
@@ -34,6 +37,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: Test/yosupo-Lowest-Common-Ancestor.test.cpp
       title: Test/yosupo-Lowest-Common-Ancestor.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: Test/yosupo-Matrix-Product.test.cpp
+      title: Test/yosupo-Matrix-Product.test.cpp
     - icon: ':heavy_check_mark:'
       path: Test/yosupo-Point-Add-Range-Sum.test.cpp
       title: Test/yosupo-Point-Add-Range-Sum.test.cpp
