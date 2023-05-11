@@ -27,7 +27,6 @@ template<typename T> using min_priority_queue = priority_queue<T, vector<T>, gre
 #define MOD 998244353
 // #define MOD 1000000007
 #define INF (1LL << 60)
-#define inf (1 << 28)
 #define elif else if
 #define pb push_back
 #define pf push_front
@@ -94,5 +93,14 @@ template<class Head, class... Tail> void OUT(const Head &head, const Tail &...ta
 
 void FLASH(){ cout << endl; }
 template<class Head, class... Tail> void FLASH(const Head  &head, const Tail &...tail) { output(head); if(sizeof...(tail)) cout << " "; FLASH(tail...); }
+
+/* boost */
+// #include <boost/multiprecision/cpp_dec_float.hpp>
+// #include <boost/multiprecision/cpp_int.hpp>
+// namespace mp = boost::multiprecision;
+// // 任意長整数型
+// using Bint = mp::cpp_int;
+// // 仮数部が10進数で1024桁の浮動小数点数型(TLEしたら小さくする)
+// using Real = mp::number<mp::cpp_dec_float<1024>>;
 
 #pragma endregion header    
