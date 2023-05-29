@@ -114,8 +114,8 @@ data:
   timestamp: '2023-05-02 10:52:24+00:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
-  - Test/yosupo-Tree-Diameter.test.cpp
   - Test/yosupo-Lowest-Common-Ancestor.test.cpp
+  - Test/yosupo-Tree-Diameter.test.cpp
 documentation_of: Data_structure/Tree.hpp
 layout: document
 title: Tree
