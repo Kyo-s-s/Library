@@ -72,10 +72,9 @@ data:
     \ \u4EEE\u6570\u90E8\u304C10\u9032\u6570\u30671024\u6841\u306E\u6D6E\u52D5\u5C0F\
     \u6570\u70B9\u6570\u578B(TLE\u3057\u305F\u3089\u5C0F\u3055\u304F\u3059\u308B)\n\
     // using Real = mp::number<mp::cpp_dec_float<1024>>;\n\nnamespace kyo {\n\nlong\
-    \ long bisect(long long ok, long long ng, function<bool(long long)> is_ok) {\n\
-    \    while (abs(ok - ng) > 1) {\n        long long mid = (ok + ng) / 2;\n    \
-    \    if (is_ok(mid))\n            ok = mid;\n        else\n            ng = mid;\n\
-    \    }\n    return ok;\n}\n\n}\n"
+    \ long bisect(long long ok, long long ng, function<bool(long long)> is_ok) { while\
+    \ (abs(ok - ng) > 1) { long long mid = ok + (ng - ok) / 2; (is_ok(mid) ? ok :\
+    \ ng) = mid; } return ok; }\n\n}\n"
   code: "#include <bits/stdc++.h>\nusing namespace std;\n// #include <atcoder/all>\n\
     // using namespace atcoder;\n\n/* alias */\nusing ull = unsigned long long;\n\
     using ll = long long;\nusing pii = pair<int, int>;\nusing pll = pair<ll, ll>;\n\
@@ -136,15 +135,14 @@ data:
     \ \u4EEE\u6570\u90E8\u304C10\u9032\u6570\u30671024\u6841\u306E\u6D6E\u52D5\u5C0F\
     \u6570\u70B9\u6570\u578B(TLE\u3057\u305F\u3089\u5C0F\u3055\u304F\u3059\u308B)\n\
     // using Real = mp::number<mp::cpp_dec_float<1024>>;\n\nnamespace kyo {\n\nlong\
-    \ long bisect(long long ok, long long ng, function<bool(long long)> is_ok) {\n\
-    \    while (abs(ok - ng) > 1) {\n        long long mid = (ok + ng) / 2;\n    \
-    \    if (is_ok(mid))\n            ok = mid;\n        else\n            ng = mid;\n\
-    \    }\n    return ok;\n}\n\n}\n"
+    \ long bisect(long long ok, long long ng, function<bool(long long)> is_ok) { while\
+    \ (abs(ok - ng) > 1) { long long mid = ok + (ng - ok) / 2; (is_ok(mid) ? ok :\
+    \ ng) = mid; } return ok; }\n\n}\n"
   dependsOn: []
   isVerificationFile: false
   path: Template/Template.hpp
   requiredBy: []
-  timestamp: '2023-05-29 17:25:55+00:00'
+  timestamp: '2023-05-29 18:19:46+00:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - Test/yosupo-many-aplusb.test.cpp
