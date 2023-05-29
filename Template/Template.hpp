@@ -105,15 +105,6 @@ template<class Head, class... Tail> void FLASH(const Head  &head, const Tail &..
 
 namespace kyo {
 
-long long bisect(long long ok, long long ng, function<bool(long long)> is_ok) {
-    while (abs(ok - ng) > 1) {
-        long long mid = (ok + ng) / 2;
-        if (is_ok(mid))
-            ok = mid;
-        else
-            ng = mid;
-    }
-    return ok;
-}
+long long bisect(long long ok, long long ng, function<bool(long long)> is_ok) { while (abs(ok - ng) > 1) { long long mid = ok + (ng - ok) / 2; (is_ok(mid) ? ok : ng) = mid; } return ok; }
 
 }
