@@ -64,6 +64,7 @@ struct popopo{ popopo(){ cin.tie(0); ios::sync_with_stdio(0); cout << fixed << s
 // n = 1,...,N に対して、n % A < B を満たすものの数 
 ll Count_of_n_mod_A_less_than_B(ll N, ll A, ll B){ return N / A * min(A, B) + min(N % A, B - 1); }
 
+bool include(ll l, ll r, ll x) { return l <= x && x < r; }
 
 /* IN/OUT */
 int scan() { return getchar(); }
