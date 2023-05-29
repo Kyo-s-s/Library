@@ -1,4 +1,3 @@
-#pragma region header
 #include <bits/stdc++.h>
 using namespace std;
 // #include <atcoder/all>
@@ -103,4 +102,17 @@ template<class Head, class... Tail> void FLASH(const Head  &head, const Tail &..
 // // 仮数部が10進数で1024桁の浮動小数点数型(TLEしたら小さくする)
 // using Real = mp::number<mp::cpp_dec_float<1024>>;
 
-#pragma endregion header    
+namespace kyo {
+
+long long bisect(long long ok, long long ng, function<bool(long long)> is_ok) {
+    while (abs(ok - ng) > 1) {
+        long long mid = (ok + ng) / 2;
+        if (is_ok(mid))
+            ok = mid;
+        else
+            ng = mid;
+    }
+    return ok;
+}
+
+}
