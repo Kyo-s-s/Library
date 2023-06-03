@@ -60,10 +60,13 @@ data:
     \       if (u == v) return u;\n        for (int k = K - 1; k >= 0; k--) {\n  \
     \          if (parent[k][u] != parent[k][v]) {\n                u = parent[k][u];\n\
     \                v = parent[k][v];\n            }\n        }\n        return parent[0][u];\n\
-    \    }\n\n    T dist(int u, int v) {\n        if (weighted_dist.size() == 0) lca_build();\n\
-    \        return weighted_dist[u] + weighted_dist[v] - 2 * weighted_dist[lca(u,\
-    \ v)];\n    }\n};\n#line 7 \"Test/yosupo-Lowest-Common-Ancestor.test.cpp\"\n\n\
-    int main() {\n\n    int N, Q; cin >> N >> Q;\n    Tree tree(N);\n    for (int\
+    \    }\n\n    int prev(int u, int k) {\n        if (parent.size() == 0) lca_build();\n\
+    \        int K = parent.size();\n        for (int i = 0; i < K; i++) {\n     \
+    \       if ((k >> i) & 1) {\n                u = parent[i][u];\n            }\n\
+    \        }\n        return u;\n    }\n\n    T dist(int u, int v) {\n        if\
+    \ (weighted_dist.size() == 0) lca_build();\n        return weighted_dist[u] +\
+    \ weighted_dist[v] - 2 * weighted_dist[lca(u, v)];\n    }\n};\n#line 7 \"Test/yosupo-Lowest-Common-Ancestor.test.cpp\"\
+    \n\nint main() {\n\n    int N, Q; cin >> N >> Q;\n    Tree tree(N);\n    for (int\
     \ i = 1; i < N; i++) {\n        int p; cin >> p;\n        tree.add_edge(i, p);\n\
     \    }\n\n    while (Q--) {\n        int u, v; cin >> u >> v;\n        cout <<\
     \ tree.lca(u, v) << endl;\n    }\n\n}\n"
@@ -78,7 +81,7 @@ data:
   isVerificationFile: true
   path: Test/yosupo-Lowest-Common-Ancestor.test.cpp
   requiredBy: []
-  timestamp: '2023-05-02 10:52:24+00:00'
+  timestamp: '2023-06-03 01:23:23+00:00'
   verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: Test/yosupo-Lowest-Common-Ancestor.test.cpp

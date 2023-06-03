@@ -58,9 +58,12 @@ data:
     \       if (u == v) return u;\n        for (int k = K - 1; k >= 0; k--) {\n  \
     \          if (parent[k][u] != parent[k][v]) {\n                u = parent[k][u];\n\
     \                v = parent[k][v];\n            }\n        }\n        return parent[0][u];\n\
-    \    }\n\n    T dist(int u, int v) {\n        if (weighted_dist.size() == 0) lca_build();\n\
-    \        return weighted_dist[u] + weighted_dist[v] - 2 * weighted_dist[lca(u,\
-    \ v)];\n    }\n};\n"
+    \    }\n\n    int prev(int u, int k) {\n        if (parent.size() == 0) lca_build();\n\
+    \        int K = parent.size();\n        for (int i = 0; i < K; i++) {\n     \
+    \       if ((k >> i) & 1) {\n                u = parent[i][u];\n            }\n\
+    \        }\n        return u;\n    }\n\n    T dist(int u, int v) {\n        if\
+    \ (weighted_dist.size() == 0) lca_build();\n        return weighted_dist[u] +\
+    \ weighted_dist[v] - 2 * weighted_dist[lca(u, v)];\n    }\n};\n"
   code: "template<class T = int> struct Tree {\n    struct edge{ int to; T cost; };\n\
     \    vector<vector<edge>> G;\n    vector<vector<int>> parent;\n    vector<int>\
     \ unweighted_dist;\n    vector<T> weighted_dist;\n\n    Tree(int n) : G(n) {}\n\
@@ -104,14 +107,17 @@ data:
     \       if (u == v) return u;\n        for (int k = K - 1; k >= 0; k--) {\n  \
     \          if (parent[k][u] != parent[k][v]) {\n                u = parent[k][u];\n\
     \                v = parent[k][v];\n            }\n        }\n        return parent[0][u];\n\
-    \    }\n\n    T dist(int u, int v) {\n        if (weighted_dist.size() == 0) lca_build();\n\
-    \        return weighted_dist[u] + weighted_dist[v] - 2 * weighted_dist[lca(u,\
-    \ v)];\n    }\n};\n"
+    \    }\n\n    int prev(int u, int k) {\n        if (parent.size() == 0) lca_build();\n\
+    \        int K = parent.size();\n        for (int i = 0; i < K; i++) {\n     \
+    \       if ((k >> i) & 1) {\n                u = parent[i][u];\n            }\n\
+    \        }\n        return u;\n    }\n\n    T dist(int u, int v) {\n        if\
+    \ (weighted_dist.size() == 0) lca_build();\n        return weighted_dist[u] +\
+    \ weighted_dist[v] - 2 * weighted_dist[lca(u, v)];\n    }\n};\n"
   dependsOn: []
   isVerificationFile: false
   path: Data_structure/Tree.hpp
   requiredBy: []
-  timestamp: '2023-05-02 10:52:24+00:00'
+  timestamp: '2023-06-03 01:23:23+00:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - Test/yosupo-Lowest-Common-Ancestor.test.cpp
@@ -251,3 +257,20 @@ T tree.dist(int u, int v)
 ##### 計算量
 
 - $O(\log N)$
+
+## prev
+
+```cpp
+int tree.prev(int u, int k)
+```
+
+- 頂点 $u$ から $k$ 個、根に向かって進んだ時の頂点を返す。存在しない場合、 $-1$ が帰る。
+- 下位 $K$ bit を見ているため、それを超える値が $k$ に来ると壊れそう
+
+##### 制約
+
+- $0 \leq u < N$
+
+##### 計算量
+
+- $O(\log k)$

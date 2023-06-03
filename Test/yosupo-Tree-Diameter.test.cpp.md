@@ -60,14 +60,17 @@ data:
     \       if (u == v) return u;\n        for (int k = K - 1; k >= 0; k--) {\n  \
     \          if (parent[k][u] != parent[k][v]) {\n                u = parent[k][u];\n\
     \                v = parent[k][v];\n            }\n        }\n        return parent[0][u];\n\
-    \    }\n\n    T dist(int u, int v) {\n        if (weighted_dist.size() == 0) lca_build();\n\
-    \        return weighted_dist[u] + weighted_dist[v] - 2 * weighted_dist[lca(u,\
-    \ v)];\n    }\n};\n#line 7 \"Test/yosupo-Tree-Diameter.test.cpp\"\n\nint main()\
-    \ {\n\n    int N; cin >> N;\n    Tree<long long> tree(N);\n    for (int i = 0;\
-    \ i < N - 1; i++) {\n        int a, b;\n        long long c; \n        cin >>\
-    \ a >> b >> c;\n\n        tree.add_edge(a, b, c);\n    }\n\n    auto [dist, u,\
-    \ v] = tree.diameter();\n    vector<int> path = tree.path(u, v);\n    cout <<\
-    \ dist << \" \" << path.size() << endl;\n    for (int i = 0; i < path.size();\
+    \    }\n\n    int prev(int u, int k) {\n        if (parent.size() == 0) lca_build();\n\
+    \        int K = parent.size();\n        for (int i = 0; i < K; i++) {\n     \
+    \       if ((k >> i) & 1) {\n                u = parent[i][u];\n            }\n\
+    \        }\n        return u;\n    }\n\n    T dist(int u, int v) {\n        if\
+    \ (weighted_dist.size() == 0) lca_build();\n        return weighted_dist[u] +\
+    \ weighted_dist[v] - 2 * weighted_dist[lca(u, v)];\n    }\n};\n#line 7 \"Test/yosupo-Tree-Diameter.test.cpp\"\
+    \n\nint main() {\n\n    int N; cin >> N;\n    Tree<long long> tree(N);\n    for\
+    \ (int i = 0; i < N - 1; i++) {\n        int a, b;\n        long long c; \n  \
+    \      cin >> a >> b >> c;\n\n        tree.add_edge(a, b, c);\n    }\n\n    auto\
+    \ [dist, u, v] = tree.diameter();\n    vector<int> path = tree.path(u, v);\n \
+    \   cout << dist << \" \" << path.size() << endl;\n    for (int i = 0; i < path.size();\
     \ i++) {\n        cout << path[i] << \" \\n\"[i == path.size() - 1];\n    }\n\n\
     }\n"
   code: "#include <bits/stdc++.h>\nusing namespace std;\n\n#define PROBLEM \"https://judge.yosupo.jp/problem/tree_diameter\"\
@@ -83,7 +86,7 @@ data:
   isVerificationFile: true
   path: Test/yosupo-Tree-Diameter.test.cpp
   requiredBy: []
-  timestamp: '2023-05-02 10:52:24+00:00'
+  timestamp: '2023-06-03 01:23:23+00:00'
   verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: Test/yosupo-Tree-Diameter.test.cpp
