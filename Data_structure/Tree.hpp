@@ -108,6 +108,17 @@ template<class T = int> struct Tree {
         return parent[0][u];
     }
 
+    int prev(int u, int k) {
+        if (parent.size() == 0) lca_build();
+        int K = parent.size();
+        for (int i = 0; i < K; i++) {
+            if ((k >> i) & 1) {
+                u = parent[i][u];
+            }
+        }
+        return u;
+    }
+
     T dist(int u, int v) {
         if (weighted_dist.size() == 0) lca_build();
         return weighted_dist[u] + weighted_dist[v] - 2 * weighted_dist[lca(u, v)];
