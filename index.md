@@ -7,6 +7,9 @@ data:
       path: Data_structure/CumulativeSum.hpp
       title: CumulativeSum
     - icon: ':heavy_check_mark:'
+      path: Data_structure/DynamicSegtree.hpp
+      title: DynamicSegtree
+    - icon: ':heavy_check_mark:'
       path: Data_structure/Segtree.hpp
       title: Segtree
     - icon: ':heavy_check_mark:'
@@ -40,6 +43,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: Test/yosupo-Matrix-Product.test.cpp
       title: Test/yosupo-Matrix-Product.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: Test/yosupo-Point-Add-Range-Sum(DynamicSegtree).test.cpp
+      title: Test/yosupo-Point-Add-Range-Sum(DynamicSegtree).test.cpp
     - icon: ':heavy_check_mark:'
       path: Test/yosupo-Point-Add-Range-Sum.test.cpp
       title: Test/yosupo-Point-Add-Range-Sum.test.cpp
