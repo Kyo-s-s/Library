@@ -1,0 +1,65 @@
+---
+data:
+  _extendedDependsOn: []
+  _extendedRequiredBy: []
+  _extendedVerifiedWith:
+  - icon: ':x:'
+    path: Test/yosupo-Z-Algorithm.test.cpp
+    title: Test/yosupo-Z-Algorithm.test.cpp
+  _isVerificationFailed: true
+  _pathExtension: hpp
+  _verificationStatusIcon: ':x:'
+  attributes:
+    links: []
+  bundledCode: "#line 1 \"String/Zalgorithm.hpp\"\nvector<int> Zalgorithm(const string\
+    \ &S) {\n    vector<int> Z(S.size());\n    Z[0] = (int)S.size();\n    int i =\
+    \ 1, j = 0;\n    while(i < S.size()) {\n        while(i + j < (int)(S.size())\
+    \ && S[j] == S[i + j]) j++;\n        Z[i] = j;\n\n        if(j == 0) {\n     \
+    \       i++;\n            continue;\n        }\n\n        int k = 1;\n       \
+    \ while(k < j && k + Z[k] < j) {\n            Z[i + k] = Z[k];\n            k++;\n\
+    \        }\n        i += k;\n        j -= k;\n    }\n    return Z;\n}\n\ntemplate<class\
+    \ T>\nvector<int> Zalgorithm(const vector<T> &S) {\n    vector<int> Z(S.size());\n\
+    \    Z[0] = (int)S.size();\n    int i = 1, j = 0;\n    while(i < S.size()) {\n\
+    \        while(i + j < (int)(S.size()) && S[j] == S[i + j]) j++;\n        Z[i]\
+    \ = j;\n\n        if(j == 0) {\n            i++;\n            continue;\n    \
+    \    }\n\n        int k = 1;\n        while(k < j && k + Z[k] < j) {\n       \
+    \     Z[i + k] = Z[k];\n            k++;\n        }\n        i += k;\n       \
+    \ j -= k;\n    }\n    return Z;\n}\n"
+  code: "vector<int> Zalgorithm(const string &S) {\n    vector<int> Z(S.size());\n\
+    \    Z[0] = (int)S.size();\n    int i = 1, j = 0;\n    while(i < S.size()) {\n\
+    \        while(i + j < (int)(S.size()) && S[j] == S[i + j]) j++;\n        Z[i]\
+    \ = j;\n\n        if(j == 0) {\n            i++;\n            continue;\n    \
+    \    }\n\n        int k = 1;\n        while(k < j && k + Z[k] < j) {\n       \
+    \     Z[i + k] = Z[k];\n            k++;\n        }\n        i += k;\n       \
+    \ j -= k;\n    }\n    return Z;\n}\n\ntemplate<class T>\nvector<int> Zalgorithm(const\
+    \ vector<T> &S) {\n    vector<int> Z(S.size());\n    Z[0] = (int)S.size();\n \
+    \   int i = 1, j = 0;\n    while(i < S.size()) {\n        while(i + j < (int)(S.size())\
+    \ && S[j] == S[i + j]) j++;\n        Z[i] = j;\n\n        if(j == 0) {\n     \
+    \       i++;\n            continue;\n        }\n\n        int k = 1;\n       \
+    \ while(k < j && k + Z[k] < j) {\n            Z[i + k] = Z[k];\n            k++;\n\
+    \        }\n        i += k;\n        j -= k;\n    }\n    return Z;\n}\n"
+  dependsOn: []
+  isVerificationFile: false
+  path: String/Zalgorithm.hpp
+  requiredBy: []
+  timestamp: '2023-07-12 13:20:16+00:00'
+  verificationStatus: LIBRARY_ALL_WA
+  verifiedWith:
+  - Test/yosupo-Z-Algorithm.test.cpp
+documentation_of: String/Zalgorithm.hpp
+layout: document
+title: Zalgorithm
+---
+
+## Zalgorithm
+```C++
+(1) vector<int> Zalgorithm(string S)
+(2) vector<int> Zalgorithm(vector<T> S)
+```
+
+入力の長さを $n$ として, 長さ $n$ の配列を返す. $i$番目の要素は`s[0..n)`と`s[i..n)`の最長共通接頭辞.
+
+###### 計算量
+
+- $O(|S|)$
+

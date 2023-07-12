@@ -29,6 +29,11 @@ data:
     - icon: ':heavy_check_mark:'
       path: Math/Modint.hpp
       title: Modint
+  - name: String
+    pages:
+    - icon: ':x:'
+      path: String/Zalgorithm.hpp
+      title: Zalgorithm
   - name: Template
     pages:
     - icon: ':heavy_check_mark:'
@@ -58,6 +63,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: Test/yosupo-UnionFind.test.cpp
       title: Test/yosupo-UnionFind.test.cpp
+    - icon: ':x:'
+      path: Test/yosupo-Z-Algorithm.test.cpp
+      title: Test/yosupo-Z-Algorithm.test.cpp
     - icon: ':heavy_check_mark:'
       path: Test/yosupo-many-aplusb.test.cpp
       title: Test/yosupo-many-aplusb.test.cpp
