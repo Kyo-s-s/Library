@@ -2,13 +2,10 @@
 data:
   _extendedDependsOn: []
   _extendedRequiredBy: []
-  _extendedVerifiedWith:
-  - icon: ':x:'
-    path: Test/yosupo-Z-Algorithm.test.cpp
-    title: Test/yosupo-Z-Algorithm.test.cpp
-  _isVerificationFailed: true
+  _extendedVerifiedWith: []
+  _isVerificationFailed: false
   _pathExtension: hpp
-  _verificationStatusIcon: ':x:'
+  _verificationStatusIcon: ':warning:'
   attributes:
     links: []
   bundledCode: "#line 1 \"String/Zalgorithm.hpp\"\nvector<int> Zalgorithm(const string\
@@ -43,9 +40,8 @@ data:
   path: String/Zalgorithm.hpp
   requiredBy: []
   timestamp: '2023-07-12 13:20:16+00:00'
-  verificationStatus: LIBRARY_ALL_WA
-  verifiedWith:
-  - Test/yosupo-Z-Algorithm.test.cpp
+  verificationStatus: LIBRARY_NO_TESTS
+  verifiedWith: []
 documentation_of: String/Zalgorithm.hpp
 layout: document
 title: Zalgorithm

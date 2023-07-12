@@ -31,7 +31,7 @@ data:
       title: Modint
   - name: String
     pages:
-    - icon: ':x:'
+    - icon: ':warning:'
       path: String/Zalgorithm.hpp
       title: Zalgorithm
   - name: Template
