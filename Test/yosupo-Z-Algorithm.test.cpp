@@ -1,9 +1,9 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-#define PROLEM "https://judge.yosupo.jp/problem/zalgorithm"
+#define PROBLEM "https://judge.yosupo.jp/problem/zalgorithm"
 
-#include "../String/Zalgorithm.hpp"
+// #include "../String/Zalgorithm.hpp"
 
 int main() {
 
