@@ -31,7 +31,7 @@ data:
       title: Modint
   - name: String
     pages:
-    - icon: ':warning:'
+    - icon: ':heavy_check_mark:'
       path: String/Zalgorithm.hpp
       title: Zalgorithm
   - name: Template
@@ -63,7 +63,7 @@ data:
     - icon: ':heavy_check_mark:'
       path: Test/yosupo-UnionFind.test.cpp
       title: Test/yosupo-UnionFind.test.cpp
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: Test/yosupo-Z-Algorithm.test.cpp
       title: Test/yosupo-Z-Algorithm.test.cpp
     - icon: ':heavy_check_mark:'
