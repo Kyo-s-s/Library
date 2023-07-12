@@ -3,7 +3,7 @@ using namespace std;
 
 #define PROBLEM "https://judge.yosupo.jp/problem/zalgorithm"
 
-// #include "../String/Zalgorithm.hpp"
+#include "../String/Zalgorithm.hpp"
 
 int main() {
 
