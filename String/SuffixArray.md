@@ -8,16 +8,17 @@ documentation_of: ./SuffixArray.hpp
 vector<int> SuffixArray(string S)
 ```
 
-$ S $ について(空文字を含む)SuffixArrayを返す. 長さ $ |S|+1 $ の配列を返す. 
+$S$ について(空文字を含む)SuffixArrayを返す. 
+$S$ の長さを $N$ として、長さ $ N+1 $ の配列を返す. 
 
 ###### 計算量
 
-- $ O( |S| \log |S| ) $
+- $ O( N \log N ) $
 
 
 ### SuffixArray とは？
 
-接尾辞(先頭から $ n \in \{0, \ldots, |S| \} $ 文字を取り除いた文字列)を，辞書順に並べたもの．
+接尾辞(先頭から $ n \in \{0, \ldots, N \} $ 文字を取り除いた文字列)を，辞書順に並べたもの．
 
 たとえば`suffixarray`について，
 
