@@ -32,6 +32,9 @@ data:
   - name: String
     pages:
     - icon: ':heavy_check_mark:'
+      path: String/LCPArray.hpp
+      title: LCPArray
+    - icon: ':heavy_check_mark:'
       path: String/SuffixArray.hpp
       title: SuffixArray
     - icon: ':heavy_check_mark:'
@@ -51,6 +54,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: Test/yosupo-Matrix-Product.test.cpp
       title: Test/yosupo-Matrix-Product.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: Test/yosupo-Number-of-Substrings.test.cpp
+      title: Test/yosupo-Number-of-Substrings.test.cpp
     - icon: ':heavy_check_mark:'
       path: Test/yosupo-Point-Add-Range-Sum(DynamicSegtree).test.cpp
       title: Test/yosupo-Point-Add-Range-Sum(DynamicSegtree).test.cpp

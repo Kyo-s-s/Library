@@ -4,6 +4,9 @@ data:
   _extendedRequiredBy: []
   _extendedVerifiedWith:
   - icon: ':heavy_check_mark:'
+    path: Test/yosupo-Number-of-Substrings.test.cpp
+    title: Test/yosupo-Number-of-Substrings.test.cpp
+  - icon: ':heavy_check_mark:'
     path: Test/yosupo-Suffix-Array.test.cpp
     title: Test/yosupo-Suffix-Array.test.cpp
   _isVerificationFailed: false
@@ -43,6 +46,7 @@ data:
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - Test/yosupo-Suffix-Array.test.cpp
+  - Test/yosupo-Number-of-Substrings.test.cpp
 documentation_of: String/SuffixArray.hpp
 layout: document
 title: SuffixArray
