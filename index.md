@@ -32,6 +32,9 @@ data:
   - name: String
     pages:
     - icon: ':heavy_check_mark:'
+      path: String/SuffixArray.hpp
+      title: SuffixArray
+    - icon: ':heavy_check_mark:'
       path: String/Zalgorithm.hpp
       title: Zalgorithm
   - name: Template
@@ -57,6 +60,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: Test/yosupo-Static-Range-Sum.test.cpp
       title: Test/yosupo-Static-Range-Sum.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: Test/yosupo-Suffix-Array.test.cpp
+      title: Test/yosupo-Suffix-Array.test.cpp
     - icon: ':heavy_check_mark:'
       path: Test/yosupo-Tree-Diameter.test.cpp
       title: Test/yosupo-Tree-Diameter.test.cpp
