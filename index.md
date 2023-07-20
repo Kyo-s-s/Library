@@ -10,6 +10,9 @@ data:
       path: Data_structure/DynamicSegtree.hpp
       title: DynamicSegtree
     - icon: ':heavy_check_mark:'
+      path: Data_structure/MaxFlow.hpp
+      title: MaxFlow
+    - icon: ':heavy_check_mark:'
       path: Data_structure/Segtree.hpp
       title: Segtree
     - icon: ':heavy_check_mark:'
@@ -51,6 +54,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: Test/yosupo-Lowest-Common-Ancestor.test.cpp
       title: Test/yosupo-Lowest-Common-Ancestor.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: Test/yosupo-Matching-on-Bipartite-Graph.test.cpp
+      title: Test/yosupo-Matching-on-Bipartite-Graph.test.cpp
     - icon: ':heavy_check_mark:'
       path: Test/yosupo-Matrix-Product.test.cpp
       title: Test/yosupo-Matrix-Product.test.cpp
