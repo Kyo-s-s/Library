@@ -6,6 +6,12 @@ documentation_of: ./Segtree.hpp
 セグメント木 モノイドを渡す
 
 ## モノイド
+集合 $S$ とその二項演算 $\cdot : S \times S \to S$ で、
+- $\forall a, b, c \in S~~(a \cdot b) \cdot c = a \cdot (b \cdot c)$
+- $\exist e \in S~~\mathrm{s.t.}~~\forall a \in S~~ e \cdot a = a \cdot e = a$
+
+を満たすとき、$(S, \cdot, e)$ をモノイドという。
+
 例えば加法モノイドなら、次のように書く。
 ```cpp
 struct Add_M {
