@@ -23,7 +23,7 @@ data:
       title: UnionFind
   - name: Math
     pages:
-    - icon: ':x:'
+    - icon: ':question:'
       path: Math/Enumeration.hpp
       title: Enumeration
     - icon: ':heavy_check_mark:'
@@ -51,6 +51,9 @@ data:
   verificationCategories:
   - name: Test
     pages:
+    - icon: ':heavy_check_mark:'
+      path: Test/aoj-DPL-5-B.test.cpp
+      title: Test/aoj-DPL-5-B.test.cpp
     - icon: ':x:'
       path: Test/aoj-DPL-5-G.test.cpp
       title: Test/aoj-DPL-5-G.test.cpp

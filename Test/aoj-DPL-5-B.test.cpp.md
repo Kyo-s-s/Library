@@ -9,16 +9,16 @@ data:
     title: Modint
   _extendedRequiredBy: []
   _extendedVerifiedWith: []
-  _isVerificationFailed: true
+  _isVerificationFailed: false
   _pathExtension: cpp
-  _verificationStatusIcon: ':x:'
+  _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     '*NOT_SPECIAL_COMMENTS*': ''
-    PROBLEM: https://onlinejudge.u-aizu.ac.jp/problems/DPL_5_G
+    PROBLEM: https://onlinejudge.u-aizu.ac.jp/problems/DPL_5_B
     links:
-    - https://onlinejudge.u-aizu.ac.jp/problems/DPL_5_G
-  bundledCode: "#line 1 \"Test/aoj-DPL-5-G.test.cpp\"\n#include <bits/stdc++.h>\n\
-    using namespace std;\n\n#define PROBLEM \"https://onlinejudge.u-aizu.ac.jp/problems/DPL_5_G\"\
+    - https://onlinejudge.u-aizu.ac.jp/problems/DPL_5_B
+  bundledCode: "#line 1 \"Test/aoj-DPL-5-B.test.cpp\"\n#include <bits/stdc++.h>\n\
+    using namespace std;\n\n#define PROBLEM \"https://onlinejudge.u-aizu.ac.jp/problems/DPL_5_B\"\
     \n\n#line 1 \"Math/Modint.hpp\"\ntemplate<int m> struct StaticModint{\n    using\
     \ mint = StaticModint;\n  public:\n    static constexpr int mod() { return m;\
     \ }\n    static mint raw(int v) {\n        mint x;\n        x._v = v;\n      \
@@ -54,7 +54,7 @@ data:
     \    }\n\n  private:\n    unsigned int _v;\n    static constexpr unsigned int\
     \ umod() { return m; }\n\n};\n\nusing Modint998244353 = StaticModint<998244353>;\n\
     using Modint1000000007 = StaticModint<1000000007>;\n\nusing Mint = Modint998244353;\n\
-    #line 7 \"Test/aoj-DPL-5-G.test.cpp\"\n\n#line 1 \"Math/Enumeration.hpp\"\ntemplate<class\
+    #line 7 \"Test/aoj-DPL-5-B.test.cpp\"\n\n#line 1 \"Math/Enumeration.hpp\"\ntemplate<class\
     \ T> struct Enumeration{\n  public:\n    Enumeration(int sz = 0) { update(sz);\
     \ }\n\n    T fact(int k) {\n        update(k);\n        return _fact[k];\n   \
     \ }\n\n    T finv(int k) {\n        update(k);\n        return _finv[k];\n   \
@@ -73,10 +73,10 @@ data:
     \ = T(1) / _fact[sz];\n            for(int i = (int)sz - 1; i >= pre_sz; i--)\
     \ {\n                _finv[i] = _finv[i + 1] * T(i + 1);\n            }\n    \
     \        for(int i = pre_sz; i <= (int)sz; i++) {\n                _inv[i] = _finv[i]\
-    \ * _fact[i - 1];\n            }\n        }\n    }\n\n};\n#line 9 \"Test/aoj-DPL-5-G.test.cpp\"\
+    \ * _fact[i - 1];\n            }\n        }\n    }\n\n};\n#line 9 \"Test/aoj-DPL-5-B.test.cpp\"\
     \n\n\nint main() {\n\n    int N, K;\n    cin >> N >> K;\n\n    Enumeration<Modint1000000007>\
     \ enu;\n\n    cout << enu.nPk(K, N) << endl;\n}\n"
-  code: "#include <bits/stdc++.h>\nusing namespace std;\n\n#define PROBLEM \"https://onlinejudge.u-aizu.ac.jp/problems/DPL_5_G\"\
+  code: "#include <bits/stdc++.h>\nusing namespace std;\n\n#define PROBLEM \"https://onlinejudge.u-aizu.ac.jp/problems/DPL_5_B\"\
     \n\n#include \"../Math/Modint.hpp\"\n\n#include \"../Math/Enumeration.hpp\"\n\n\
     \nint main() {\n\n    int N, K;\n    cin >> N >> K;\n\n    Enumeration<Modint1000000007>\
     \ enu;\n\n    cout << enu.nPk(K, N) << endl;\n}\n"
@@ -84,15 +84,15 @@ data:
   - Math/Modint.hpp
   - Math/Enumeration.hpp
   isVerificationFile: true
-  path: Test/aoj-DPL-5-G.test.cpp
+  path: Test/aoj-DPL-5-B.test.cpp
   requiredBy: []
-  timestamp: '2023-07-23 03:18:56+00:00'
-  verificationStatus: TEST_WRONG_ANSWER
+  timestamp: '2023-07-23 03:21:09+00:00'
+  verificationStatus: TEST_ACCEPTED
   verifiedWith: []
-documentation_of: Test/aoj-DPL-5-G.test.cpp
+documentation_of: Test/aoj-DPL-5-B.test.cpp
 layout: document
 redirect_from:
-- /verify/Test/aoj-DPL-5-G.test.cpp
-- /verify/Test/aoj-DPL-5-G.test.cpp.html
-title: Test/aoj-DPL-5-G.test.cpp
+- /verify/Test/aoj-DPL-5-B.test.cpp
+- /verify/Test/aoj-DPL-5-B.test.cpp.html
+title: Test/aoj-DPL-5-B.test.cpp
 ---

@@ -3,12 +3,15 @@ data:
   _extendedDependsOn: []
   _extendedRequiredBy: []
   _extendedVerifiedWith:
+  - icon: ':heavy_check_mark:'
+    path: Test/aoj-DPL-5-B.test.cpp
+    title: Test/aoj-DPL-5-B.test.cpp
   - icon: ':x:'
     path: Test/aoj-DPL-5-G.test.cpp
     title: Test/aoj-DPL-5-G.test.cpp
   _isVerificationFailed: true
   _pathExtension: hpp
-  _verificationStatusIcon: ':x:'
+  _verificationStatusIcon: ':question:'
   attributes:
     links: []
   bundledCode: "#line 1 \"Math/Enumeration.hpp\"\ntemplate<class T> struct Enumeration{\n\
@@ -56,8 +59,9 @@ data:
   path: Math/Enumeration.hpp
   requiredBy: []
   timestamp: '2022-07-30 23:47:06+09:00'
-  verificationStatus: LIBRARY_ALL_WA
+  verificationStatus: LIBRARY_SOME_WA
   verifiedWith:
+  - Test/aoj-DPL-5-B.test.cpp
   - Test/aoj-DPL-5-G.test.cpp
 documentation_of: Math/Enumeration.hpp
 layout: document

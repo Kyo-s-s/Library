@@ -3,6 +3,9 @@ data:
   _extendedDependsOn: []
   _extendedRequiredBy: []
   _extendedVerifiedWith:
+  - icon: ':heavy_check_mark:'
+    path: Test/aoj-DPL-5-B.test.cpp
+    title: Test/aoj-DPL-5-B.test.cpp
   - icon: ':x:'
     path: Test/aoj-DPL-5-G.test.cpp
     title: Test/aoj-DPL-5-G.test.cpp
@@ -92,6 +95,7 @@ data:
   verificationStatus: LIBRARY_SOME_WA
   verifiedWith:
   - Test/yosupo-Matrix-Product.test.cpp
+  - Test/aoj-DPL-5-B.test.cpp
   - Test/aoj-DPL-5-G.test.cpp
 documentation_of: Math/Modint.hpp
 layout: document
