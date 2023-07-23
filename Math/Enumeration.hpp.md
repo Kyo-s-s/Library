@@ -2,10 +2,13 @@
 data:
   _extendedDependsOn: []
   _extendedRequiredBy: []
-  _extendedVerifiedWith: []
-  _isVerificationFailed: false
+  _extendedVerifiedWith:
+  - icon: ':x:'
+    path: Test/aoj-DPL-5-G.test.cpp
+    title: Test/aoj-DPL-5-G.test.cpp
+  _isVerificationFailed: true
   _pathExtension: hpp
-  _verificationStatusIcon: ':warning:'
+  _verificationStatusIcon: ':x:'
   attributes:
     links: []
   bundledCode: "#line 1 \"Math/Enumeration.hpp\"\ntemplate<class T> struct Enumeration{\n\
@@ -53,8 +56,9 @@ data:
   path: Math/Enumeration.hpp
   requiredBy: []
   timestamp: '2022-07-30 23:47:06+09:00'
-  verificationStatus: LIBRARY_NO_TESTS
-  verifiedWith: []
+  verificationStatus: LIBRARY_ALL_WA
+  verifiedWith:
+  - Test/aoj-DPL-5-G.test.cpp
 documentation_of: Math/Enumeration.hpp
 layout: document
 title: Enumeration
