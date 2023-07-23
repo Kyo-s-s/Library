@@ -1,6 +1,6 @@
 ---
 title: LazySegtree
-documentation_of: ./LazySegtree.cpp
+documentation_of: ./LazySegtree.hpp
 ---
 
 モノイド$(S, +, e)$と、それに対する作用素モノイド$(F, \circ, id)$ であり、
