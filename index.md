@@ -10,6 +10,9 @@ data:
       path: Data_structure/DynamicSegtree.hpp
       title: DynamicSegtree
     - icon: ':heavy_check_mark:'
+      path: Data_structure/LazySegtree.hpp
+      title: Data_structure/LazySegtree.hpp
+    - icon: ':heavy_check_mark:'
       path: Data_structure/MaxFlow.hpp
       title: MaxFlow
     - icon: ':heavy_check_mark:'
@@ -54,6 +57,12 @@ data:
     - icon: ':heavy_check_mark:'
       path: Test/aoj-DPL-5-B.test.cpp
       title: Test/aoj-DPL-5-B.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: Test/aoj-DSL-2-H.test.cpp
+      title: Test/aoj-DSL-2-H.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: Test/aoj-DSL-2-I.test.cpp
+      title: Test/aoj-DSL-2-I.test.cpp
     - icon: ':heavy_check_mark:'
       path: Test/yosupo-Lowest-Common-Ancestor.test.cpp
       title: Test/yosupo-Lowest-Common-Ancestor.test.cpp
