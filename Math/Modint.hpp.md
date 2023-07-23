@@ -6,15 +6,12 @@ data:
   - icon: ':heavy_check_mark:'
     path: Test/aoj-DPL-5-B.test.cpp
     title: Test/aoj-DPL-5-B.test.cpp
-  - icon: ':x:'
-    path: Test/aoj-DPL-5-G.test.cpp
-    title: Test/aoj-DPL-5-G.test.cpp
   - icon: ':heavy_check_mark:'
     path: Test/yosupo-Matrix-Product.test.cpp
     title: Test/yosupo-Matrix-Product.test.cpp
-  _isVerificationFailed: true
+  _isVerificationFailed: false
   _pathExtension: hpp
-  _verificationStatusIcon: ':question:'
+  _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     links: []
   bundledCode: "#line 1 \"Math/Modint.hpp\"\ntemplate<int m> struct StaticModint{\n\
@@ -92,11 +89,10 @@ data:
   path: Math/Modint.hpp
   requiredBy: []
   timestamp: '2022-08-21 11:18:02+09:00'
-  verificationStatus: LIBRARY_SOME_WA
+  verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - Test/yosupo-Matrix-Product.test.cpp
   - Test/aoj-DPL-5-B.test.cpp
-  - Test/aoj-DPL-5-G.test.cpp
 documentation_of: Math/Modint.hpp
 layout: document
 title: Modint

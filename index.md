@@ -23,13 +23,13 @@ data:
       title: UnionFind
   - name: Math
     pages:
-    - icon: ':question:'
+    - icon: ':heavy_check_mark:'
       path: Math/Enumeration.hpp
       title: Enumeration
     - icon: ':heavy_check_mark:'
       path: Math/Matrix.hpp
       title: Matrix
-    - icon: ':question:'
+    - icon: ':heavy_check_mark:'
       path: Math/Modint.hpp
       title: Modint
   - name: String
@@ -54,9 +54,6 @@ data:
     - icon: ':heavy_check_mark:'
       path: Test/aoj-DPL-5-B.test.cpp
       title: Test/aoj-DPL-5-B.test.cpp
-    - icon: ':x:'
-      path: Test/aoj-DPL-5-G.test.cpp
-      title: Test/aoj-DPL-5-G.test.cpp
     - icon: ':heavy_check_mark:'
       path: Test/yosupo-Lowest-Common-Ancestor.test.cpp
       title: Test/yosupo-Lowest-Common-Ancestor.test.cpp

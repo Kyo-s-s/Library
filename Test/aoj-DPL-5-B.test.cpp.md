@@ -1,10 +1,10 @@
 ---
 data:
   _extendedDependsOn:
-  - icon: ':question:'
+  - icon: ':heavy_check_mark:'
     path: Math/Enumeration.hpp
     title: Enumeration
-  - icon: ':question:'
+  - icon: ':heavy_check_mark:'
     path: Math/Modint.hpp
     title: Modint
   _extendedRequiredBy: []
@@ -14,11 +14,11 @@ data:
   _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     '*NOT_SPECIAL_COMMENTS*': ''
-    PROBLEM: https://onlinejudge.u-aizu.ac.jp/problems/DPL_5_B
+    PROBLEM: https://onlinejudge.u-aizu.ac.jp/courses/library/7/DPL/5/DPL_5_B
     links:
-    - https://onlinejudge.u-aizu.ac.jp/problems/DPL_5_B
+    - https://onlinejudge.u-aizu.ac.jp/courses/library/7/DPL/5/DPL_5_B
   bundledCode: "#line 1 \"Test/aoj-DPL-5-B.test.cpp\"\n#include <bits/stdc++.h>\n\
-    using namespace std;\n\n#define PROBLEM \"https://onlinejudge.u-aizu.ac.jp/problems/DPL_5_B\"\
+    using namespace std;\n\n#define PROBLEM \"https://onlinejudge.u-aizu.ac.jp/courses/library/7/DPL/5/DPL_5_B\"\
     \n\n#line 1 \"Math/Modint.hpp\"\ntemplate<int m> struct StaticModint{\n    using\
     \ mint = StaticModint;\n  public:\n    static constexpr int mod() { return m;\
     \ }\n    static mint raw(int v) {\n        mint x;\n        x._v = v;\n      \
@@ -76,7 +76,7 @@ data:
     \ * _fact[i - 1];\n            }\n        }\n    }\n\n};\n#line 9 \"Test/aoj-DPL-5-B.test.cpp\"\
     \n\n\nint main() {\n\n    int N, K;\n    cin >> N >> K;\n\n    Enumeration<Modint1000000007>\
     \ enu;\n\n    cout << enu.nPk(K, N) << endl;\n}\n"
-  code: "#include <bits/stdc++.h>\nusing namespace std;\n\n#define PROBLEM \"https://onlinejudge.u-aizu.ac.jp/problems/DPL_5_B\"\
+  code: "#include <bits/stdc++.h>\nusing namespace std;\n\n#define PROBLEM \"https://onlinejudge.u-aizu.ac.jp/courses/library/7/DPL/5/DPL_5_B\"\
     \n\n#include \"../Math/Modint.hpp\"\n\n#include \"../Math/Enumeration.hpp\"\n\n\
     \nint main() {\n\n    int N, K;\n    cin >> N >> K;\n\n    Enumeration<Modint1000000007>\
     \ enu;\n\n    cout << enu.nPk(K, N) << endl;\n}\n"
@@ -86,7 +86,7 @@ data:
   isVerificationFile: true
   path: Test/aoj-DPL-5-B.test.cpp
   requiredBy: []
-  timestamp: '2023-07-23 03:21:09+00:00'
+  timestamp: '2023-07-23 03:25:33+00:00'
   verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: Test/aoj-DPL-5-B.test.cpp
