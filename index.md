@@ -11,7 +11,7 @@ data:
       title: DynamicSegtree
     - icon: ':heavy_check_mark:'
       path: Data_structure/LazySegtree.hpp
-      title: Data_structure/LazySegtree.hpp
+      title: LazySegtree
     - icon: ':heavy_check_mark:'
       path: Data_structure/MaxFlow.hpp
       title: MaxFlow

@@ -3,7 +3,7 @@ data:
   _extendedDependsOn:
   - icon: ':heavy_check_mark:'
     path: Data_structure/LazySegtree.hpp
-    title: Data_structure/LazySegtree.hpp
+    title: LazySegtree
   _extendedRequiredBy: []
   _extendedVerifiedWith: []
   _isVerificationFailed: false
