@@ -4,6 +4,9 @@ data:
   - name: Data_structure
     pages:
     - icon: ':heavy_check_mark:'
+      path: Data_structure/BinaryTrie.hpp
+      title: BinaryTrie
+    - icon: ':heavy_check_mark:'
       path: Data_structure/CumulativeSum.hpp
       title: CumulativeSum
     - icon: ':heavy_check_mark:'
@@ -81,6 +84,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: Test/yosupo-Point-Add-Range-Sum.test.cpp
       title: Test/yosupo-Point-Add-Range-Sum.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: Test/yosupo-Set-Xor-Min.test.cpp
+      title: Test/yosupo-Set-Xor-Min.test.cpp
     - icon: ':heavy_check_mark:'
       path: Test/yosupo-Static-Range-Sum.test.cpp
       title: Test/yosupo-Static-Range-Sum.test.cpp
