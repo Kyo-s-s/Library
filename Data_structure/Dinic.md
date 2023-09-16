@@ -1,22 +1,22 @@
 ---
-title: MaxFlow
-documentation_of: ./MaxFlow.hpp
+title: Dinic
+documentation_of: ./Dinic.hpp
 ---
 
 ## コンストラクタ
 
 ```cpp
-MaxFlow<C> mf(int N)
+Dinic<Cap> dinic(int N)
 ```
 
 - $N$頂点のグラフを作成する．何も辺が存在しない．
-- `C` は `long long` もしくは `int` であること．
+- `Cap` は `long long` もしくは `int` であること．
 
 
 ## add_edge
 
 ```cpp
-int add_edge(int from, int to, C cap)
+int add_edge(int from, int to, Cap cap)
 ```
 
 - `from`から`to`へ容量`cap`の辺を追加する。
@@ -33,11 +33,11 @@ int add_edge(int from, int to, C cap)
 - (ならし？) $O(1)$
 
 
-## max_flow
+## flow
 
 ```cpp
-(1) C max_flow(int s, int t)
-(2) C max_flow(int s, int t, C flow_limit)
+(1) Cap flow(int s, int t)
+(2) Cap flow(int s, int t, Cap flow_limit)
 ```
 
 - (1): `s` から `t` まで、上限なしの最大流を求める。
@@ -75,7 +75,7 @@ vector<bool> min_cut(int s)
 ## get_flow
 
 ```cpp
-C get_flow(int idx)
+Cap get_flow(int idx)
 ```
 
 - `max_flow(s, t)` を呼んだ後に呼ぶことを想定。頂点 `from` から頂点 `to` へ流れた流量を返す。
@@ -84,6 +84,22 @@ C get_flow(int idx)
 ##### 制約
 
 - $0 \leq from, to < N$
+
+##### 計算量
+
+- $O(1)$
+
+## change_edge
+
+```cpp
+void change_edge(int idx, Cap new_cap, Cap new_flow)
+```
+
+- `idx` 番目の辺の容量を `new_cap` に変更し、流量を `new_flow` に変更する。
+
+##### 制約
+
+- $0 \leq idx < M$
 
 ##### 計算量
 
