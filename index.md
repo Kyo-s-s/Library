@@ -10,14 +10,14 @@ data:
       path: Data_structure/CumulativeSum.hpp
       title: CumulativeSum
     - icon: ':heavy_check_mark:'
+      path: Data_structure/Dinic.hpp
+      title: Dinic
+    - icon: ':heavy_check_mark:'
       path: Data_structure/DynamicSegtree.hpp
       title: DynamicSegtree
     - icon: ':heavy_check_mark:'
       path: Data_structure/LazySegtree.hpp
       title: LazySegtree
-    - icon: ':heavy_check_mark:'
-      path: Data_structure/MaxFlow.hpp
-      title: MaxFlow
     - icon: ':heavy_check_mark:'
       path: Data_structure/Segtree.hpp
       title: Segtree
