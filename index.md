@@ -18,6 +18,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: Data_structure/LazySegtree.hpp
       title: LazySegtree
+    - icon: ':x:'
+      path: Data_structure/Rerooting.hpp
+      title: Data_structure/Rerooting.hpp
     - icon: ':heavy_check_mark:'
       path: Data_structure/Segtree.hpp
       title: Segtree
@@ -93,6 +96,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: Test/yosupo-Suffix-Array.test.cpp
       title: Test/yosupo-Suffix-Array.test.cpp
+    - icon: ':x:'
+      path: Test/yosupo-Tree-Diameter-Rerooting.test.cpp
+      title: Test/yosupo-Tree-Diameter-Rerooting.test.cpp
     - icon: ':heavy_check_mark:'
       path: Test/yosupo-Tree-Diameter.test.cpp
       title: Test/yosupo-Tree-Diameter.test.cpp
