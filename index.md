@@ -20,7 +20,7 @@ data:
       title: LazySegtree
     - icon: ':x:'
       path: Data_structure/Rerooting.hpp
-      title: Data_structure/Rerooting.hpp
+      title: Rerooting
     - icon: ':heavy_check_mark:'
       path: Data_structure/Segtree.hpp
       title: Segtree

@@ -90,8 +90,7 @@ data:
   - Test/yosupo-Tree-Diameter-Rerooting.test.cpp
 documentation_of: Data_structure/Rerooting.hpp
 layout: document
-redirect_from:
-- /library/Data_structure/Rerooting.hpp
-- /library/Data_structure/Rerooting.hpp.html
-title: Data_structure/Rerooting.hpp
+title: Rerooting
 ---
+
+全方位木DP

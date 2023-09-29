@@ -3,7 +3,7 @@ data:
   _extendedDependsOn:
   - icon: ':x:'
     path: Data_structure/Rerooting.hpp
-    title: Data_structure/Rerooting.hpp
+    title: Rerooting
   _extendedRequiredBy: []
   _extendedVerifiedWith: []
   _isVerificationFailed: true
