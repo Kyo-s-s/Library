@@ -3,12 +3,12 @@ data:
   _extendedDependsOn: []
   _extendedRequiredBy: []
   _extendedVerifiedWith:
-  - icon: ':x:'
+  - icon: ':heavy_check_mark:'
     path: Test/yosupo-Tree-Diameter-Rerooting.test.cpp
     title: Test/yosupo-Tree-Diameter-Rerooting.test.cpp
-  _isVerificationFailed: true
+  _isVerificationFailed: false
   _pathExtension: hpp
-  _verificationStatusIcon: ':x:'
+  _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     links: []
   bundledCode: "#line 1 \"Data_structure/Rerooting.hpp\"\ntemplate<typename T> \n\
@@ -85,7 +85,7 @@ data:
   path: Data_structure/Rerooting.hpp
   requiredBy: []
   timestamp: '2023-09-29 05:46:42+00:00'
-  verificationStatus: LIBRARY_ALL_WA
+  verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - Test/yosupo-Tree-Diameter-Rerooting.test.cpp
 documentation_of: Data_structure/Rerooting.hpp
