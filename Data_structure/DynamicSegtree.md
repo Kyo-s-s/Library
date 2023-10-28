@@ -7,7 +7,7 @@ documentation_of: ./DynamicSegtree.hpp
 
 ## コンストラクタ
 ```cpp
-(1) DynamicSegtree<Monoid> seg()
+(1) DynamicSegtree<Monoid> seg
 (2) DynamicSegtree<Monoid> seg(long long N)
 ```
 - (1): 上限が `LONG_LONG_MAX / 2` の、初期値がすべて`M::e()`のセグメント木を作る。この場合、以降`N = LONG_LONG_MAX / 2`とする。
