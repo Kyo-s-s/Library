@@ -91,8 +91,8 @@ data:
   timestamp: '2022-08-21 11:18:02+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
-  - Test/aoj-DPL-5-B.test.cpp
   - Test/yosupo-Matrix-Product.test.cpp
+  - Test/aoj-DPL-5-B.test.cpp
 documentation_of: Math/Modint.hpp
 layout: document
 title: Modint

@@ -57,6 +57,11 @@ data:
     - icon: ':heavy_check_mark:'
       path: Template/Template.hpp
       title: Template/Template.hpp
+  - name: .
+    pages:
+    - icon: ':warning:'
+      path: md-generator.py
+      title: md-generator.py
   verificationCategories:
   - name: Test
     pages:
