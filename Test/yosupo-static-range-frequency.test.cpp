@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-#define PROLEM "https://judge.yosupo.jp/problem/static_range_frequency"
+#define PROBLEM "https://judge.yosupo.jp/problem/static_range_frequency"
 
 #include<Data_structure/MergeTree.hpp>
 
