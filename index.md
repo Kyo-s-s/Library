@@ -19,6 +19,9 @@ data:
       path: Data_structure/LazySegtree.hpp
       title: LazySegtree
     - icon: ':heavy_check_mark:'
+      path: Data_structure/MergeTree.hpp
+      title: MergeTree
+    - icon: ':heavy_check_mark:'
       path: Data_structure/Rerooting.hpp
       title: Rerooting
     - icon: ':heavy_check_mark:'
@@ -116,6 +119,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: Test/yosupo-many-aplusb.test.cpp
       title: Test/yosupo-many-aplusb.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: Test/yosupo-static-range-frequency.test.cpp
+      title: Test/yosupo-static-range-frequency.test.cpp
 layout: toppage
 ---
 # Kyo_s_s Library
