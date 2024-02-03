@@ -15,5 +15,6 @@
 "Test/yosupo-Tree-Diameter.test.cpp": "2023-06-03 01:23:23 +0000",
 "Test/yosupo-UnionFind.test.cpp": "2023-01-22 13:56:45 +0900",
 "Test/yosupo-Z-Algorithm.test.cpp": "2023-07-12 13:28:30 +0000",
-"Test/yosupo-many-aplusb.test.cpp": "2023-05-29 18:19:46 +0000"
+"Test/yosupo-many-aplusb.test.cpp": "2023-05-29 18:19:46 +0000",
+"Test/yosupo-static-range-frequency.test.cpp": "2024-02-04 01:45:49 +0900"
 }
