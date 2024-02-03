@@ -16,7 +16,7 @@ struct MergeTree {
         d = vector<T> (2 * size, T());
         auto init = [&](auto &&init, int l, int r, int k) -> void {
             d[k] = f(l, min(r, n));
-            if(d.size() <= 2 * k) return;
+            if((int)d.size() <= 2 * k) return;
             int m = (l + r) / 2;
             init(init, l, m, 2 * k);
             init(init, m, r, 2 * k + 1);
