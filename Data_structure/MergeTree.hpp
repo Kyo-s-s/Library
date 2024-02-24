@@ -5,9 +5,8 @@ concept Monoid = requires {
     { T::e() } -> std::same_as<typename T::T>;
 };
 
-template<class T, Monoid M>
+template<class T>
 struct MergeTree {
-    using S = typename M::T;
   public:
 
     MergeTree(int n, std::function<T(int, int)> f) : n(n) {
@@ -24,9 +23,30 @@ struct MergeTree {
         init(init, 0, size, 1);
     }
 
-    S prod(int l, int r, std::function<S(const T&)> g) {
+    void apply(int l, int r, std::function<void(T&)> g) {
         assert(0 <= l && l <= r && r <= n);
-        S sml = M::e(), smr = M::e();
+        l += size; r += size;
+        while (l < r) {
+            if (l & 1) g(d[l++]);
+            if (r & 1) g(d[--r]);
+            l >>= 1; r >>= 1;
+        }
+    }
+
+    template<Monoid M> M::T get(int i, std::function<typename M::T(T&)> g) {
+        assert(0 <= i && i < n);
+        typename M::T res = M::e();
+        i += size;
+        while (i > 0) {
+            res = M::op(res, g(d[i]));
+            i >>= 1;
+        }
+        return res;
+    }
+
+    template<Monoid M> M::T prod(int l, int r, std::function<typename M::T(const T&)> g) {
+        assert(0 <= l && l <= r && r <= n);
+        typename M::T sml = M::e(), smr = M::e();
         l += size; r += size;
         while (l < r) {
             if (l & 1) sml = M::op(sml, g(d[l++]));
