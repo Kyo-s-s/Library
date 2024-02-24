@@ -21,9 +21,9 @@ data:
     \    static T e() { return 0; }\n};\n\nint main() {\n\n    int N, Q; cin >> N\
     \ >> Q;\n    vector<int> A(N);\n    for (auto &a : A) cin >> a;\n\n    auto f\
     \ = [&](int l, int r) -> T {\n        unordered_map<int, int> mp;\n        for\
-    \ (int i = l; i < r; i++) mp[A[i]]++;\n        return mp;\n    };\n\n    MergeTree<T,\
-    \ M> mt(N, f);\n\n    while (Q--) {\n        int l, r; cin >> l >> r;\n      \
-    \  int x; cin >> x;\n\n        cout << mt.prod(l, r, [&](const T &t) -> M::T {\n\
+    \ (int i = l; i < r; i++) mp[A[i]]++;\n        return mp;\n    };\n\n    MergeTree<T>\
+    \ mt(N, f);\n\n    while (Q--) {\n        int l, r; cin >> l >> r;\n        int\
+    \ x; cin >> x;\n\n        cout << mt.prod<M>(l, r, [&](const T &t) -> M::T {\n\
     \            return t.count(x) ? t.at(x) : 0;\n        }) << \"\\n\";\n    }\n\
     \n}\n"
   code: "#include<bits/stdc++.h>\nusing namespace std;\n\n#define PROBLEM \"https://judge.yosupo.jp/problem/static_range_frequency\"\
@@ -32,9 +32,9 @@ data:
     \    static T e() { return 0; }\n};\n\nint main() {\n\n    int N, Q; cin >> N\
     \ >> Q;\n    vector<int> A(N);\n    for (auto &a : A) cin >> a;\n\n    auto f\
     \ = [&](int l, int r) -> T {\n        unordered_map<int, int> mp;\n        for\
-    \ (int i = l; i < r; i++) mp[A[i]]++;\n        return mp;\n    };\n\n    MergeTree<T,\
-    \ M> mt(N, f);\n\n    while (Q--) {\n        int l, r; cin >> l >> r;\n      \
-    \  int x; cin >> x;\n\n        cout << mt.prod(l, r, [&](const T &t) -> M::T {\n\
+    \ (int i = l; i < r; i++) mp[A[i]]++;\n        return mp;\n    };\n\n    MergeTree<T>\
+    \ mt(N, f);\n\n    while (Q--) {\n        int l, r; cin >> l >> r;\n        int\
+    \ x; cin >> x;\n\n        cout << mt.prod<M>(l, r, [&](const T &t) -> M::T {\n\
     \            return t.count(x) ? t.at(x) : 0;\n        }) << \"\\n\";\n    }\n\
     \n}\n"
   dependsOn:
@@ -42,7 +42,7 @@ data:
   isVerificationFile: true
   path: Test/yosupo-static-range-frequency.test.cpp
   requiredBy: []
-  timestamp: '2024-02-04 01:47:49+09:00'
+  timestamp: '2024-02-25 02:01:11+09:00'
   verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: Test/yosupo-static-range-frequency.test.cpp
