@@ -25,13 +25,13 @@ int main() {
         return mp;
     };
 
-    MergeTree<T, M> mt(N, f);
+    MergeTree<T> mt(N, f);
 
     while (Q--) {
         int l, r; cin >> l >> r;
         int x; cin >> x;
 
-        cout << mt.prod(l, r, [&](const T &t) -> M::T {
+        cout << mt.prod<M>(l, r, [&](const T &t) -> M::T {
             return t.count(x) ? t.at(x) : 0;
         }) << "\n";
     }
